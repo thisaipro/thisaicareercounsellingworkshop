@@ -92,15 +92,30 @@ function tick(){
 }
 tick();setInterval(tick,1000);
 
-// registration forms
+// Razorpay payment page — the single source of truth for the checkout URL
+var PAY_URL='https://pages.razorpay.com/pl_Tc5KE44w13K8wE/view';
+// Build a payment URL that prefills Razorpay with what the visitor typed
+function payUrl(f){
+  function val(n){var el=f&&f.querySelector('[name='+n+']');return el&&el.value?el.value.trim():''}
+  var q=[],nm=val('name'),em=val('email'),ph=val('phone');
+  if(nm)q.push('prefill[name]='+encodeURIComponent(nm));
+  if(em)q.push('prefill[email]='+encodeURIComponent(em));
+  if(ph)q.push('prefill[contact]='+encodeURIComponent(ph));
+  return PAY_URL+(q.length?'?'+q.join('&'):'');
+}
+function goToPayment(f){window.location.href=payUrl(f)}
+
+// registration forms → collect details, then send to Razorpay checkout
 document.querySelectorAll('.wf form').forEach(function(f){
   f.addEventListener('submit',function(e){
     e.preventDefault();
+    if(f.checkValidity&&!f.checkValidity()){if(f.reportValidity)f.reportValidity();return}
     var card=f.closest('.wf');
     var nm=(f.querySelector('[name=name]')||{}).value||'';
     var out=card.querySelector('.ok .nm-out');
     if(out)out.textContent=nm.trim().split(' ')[0]||'there';
     card.classList.add('done');
+    goToPayment(f);
   });
 });
 
@@ -178,11 +193,13 @@ if(pop){
   var pf=popR&&popR.querySelector('form');
   if(pf)pf.addEventListener('submit',function(e){
     e.preventDefault();
+    if(pf.checkValidity&&!pf.checkValidity()){if(pf.reportValidity)pf.reportValidity();return}
     var nm=(pf.querySelector('[name=name]')||{}).value||'';
     var out=popR.querySelector('.ok .nm-out');
     if(out)out.textContent=nm.trim().split(' ')[0]||'there';
     popR.classList.add('done');
     try{localStorage.setItem(POPKEY,'1')}catch(e2){}
+    goToPayment(pf);
   });
 }
 
