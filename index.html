@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thisai, Tamil Nadu's First AI-Powered Career Counsellor Training · 20 Sept 2026</title>
+<meta name="description" content="Tamil Nadu's first AI-powered career counsellor training. Live online, 20 September 2026, in Tamil + English. 50 seats, no recording. Register for ₹499.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="ai-counselor.css">
+<link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="k-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></symbol>
+<symbol id="k-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></symbol>
+<symbol id="k-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></symbol>
+<symbol id="k-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.6 5.8 6.4.7-4.8 4.3 1.3 6.2L12 17l-5.5 3 1.3-6.2L3 9.5l6.4-.7L12 3z"></path></symbol>
+<symbol id="k-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-5 9 5-9 5-9-5z"></path><path d="M7 12.2V17c0 1.7 2.2 3 5 3s5-1.3 5-3v-4.8"></path></symbol>
+<symbol id="k-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></symbol>
+<symbol id="k-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4L12 3z"></path></symbol>
+<symbol id="k-grow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"></path><path d="M15 7h6v6"></path></symbol>
+</defs></svg>
+
+<div class="env" aria-hidden="true">
+<canvas id="dust"></canvas>
+<span class="liq l1"></span><span class="liq l2"></span><span class="liq l3"></span>
+<span class="grid-f"></span>
+</div>
+<div class="cursor" id="cur" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+<div class="wrap nav-in">
+<a class="lg" href="#top"><img src="assets/thisai-logo.png" alt="Thisai"></a>
+<nav class="nav-l">
+<a href="#ch01">Why This</a><a href="#ch02">3 Hours</a><a href="#ch03">Who It's For</a><a href="#ch04">Instructor</a><a href="#trust">Reviews</a><a href="#ch05">Bonuses</a><a href="#ch07">Details</a><a href="#ch08">FAQ</a>
+</nav>
+<a class="btn btn-p btn-sm mag" href="#register" style="flex:none"><span>Register for ₹499</span></a>
+<button class="brg" id="brg" aria-label="Menu" aria-expanded="false"><b></b></button>
+</div>
+<div class="mn" id="mn"><div class="wrap">
+<a href="#ch01">Why This</a><a href="#ch02">3 Hours</a><a href="#ch03">Who It's For</a><a href="#ch04">Instructor</a><a href="#trust">Reviews</a><a href="#ch05">Bonuses</a><a href="#ch07">Details</a><a href="#ch08">FAQ</a>
+<a class="btn btn-p" href="#register"><span>Register for ₹499</span></a>
+</div></div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top" data-screen-label="Hero">
+<div class="wrap hero-g">
+<div>
+<span class="kick rv"><i></i>Live Online · 20 September 2026 · Tamil + English · Only 50 Seats</span>
+<h1 class="dl rw">Tamil Nadu's First <em>AI-Powered Career Counsellor Training</em></h1>
+<p class="lede rv d2">Learn career counselling in Tamil. Use real AI tools from Day 1. Build a practice that earns big, right here in Tamil Nadu. Only 50 seats. No replay. No second chance.</p>
+<p class="trustline rv d3">By <b>Jayachandran</b> · Co-Founder, Thisai · Certified Career Counsellor · 1,000+ Students Mentored</p>
+<div class="cdn rv d3">
+<div class="ck">Workshop begins in</div>
+<div class="cdn-r">
+<div class="cdn-u"><b id="cD">00</b><span>Days</span></div>
+<div class="cdn-u"><b id="cH">00</b><span>Hours</span></div>
+<div class="cdn-u"><b id="cM">00</b><span>Minutes</span></div>
+<div class="cdn-u"><b id="cS">00</b><span>Seconds</span></div>
+</div>
+<div class="urg"><i></i><span>Only 50 seats available · Registration closes when full · No recording will be shared</span></div>
+</div>
+<div class="mcta">
+<div class="mk">Live online · 20 September 2026 · 11 AM IST</div>
+<div class="mh">Reserve your seat for ₹499</div>
+<div class="mr"><span>3 hours live</span><span>Tamil + English</span><span>50 seats</span><span>No recording</span></div>
+<button class="btn btn-p" type="button" data-open-pop="1"><span>Reserve my seat <svg><use href="#k-arr"></use></svg></span></button>
+<div class="mf">Takes 20 seconds · ₹19,500 in bonuses included</div>
+</div>
+</div>
+<div class="hv form-hv" id="hv">
+<span class="obj o-ring" aria-hidden="true"></span>
+<div class="hv-in" id="hvIn">
+<span class="obj o-orb" aria-hidden="true"></span>
+<span class="obj cube" aria-hidden="true"><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i></span>
+<div class="wf rv d1" id="register">
+<div class="wf-h"><h3>Secure Your Seat</h3><span class="pr">₹499</span></div>
+<form novalidate="novalidate">
+<div class="fr"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" required="required" autocomplete="name" placeholder="Your full name"></div>
+<div class="two">
+<div class="fr"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" required="required" autocomplete="tel" placeholder="10-digit mobile"></div>
+<div class="fr"><label for="f-city">City (Tamil Nadu)</label><input id="f-city" name="city" type="text" required="required" placeholder="e.g. Madurai"></div>
+</div>
+<div class="fr"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" required="required" autocomplete="email" placeholder="you@email.com"></div>
+<div class="fr"><label for="f-role">I am a…</label>
+<select id="f-role" name="role" required="required">
+<option value="">Select one</option>
+<option>Teacher</option>
+<option>Coaching Centre Owner</option>
+<option>HR Professional</option>
+<option>Tutor or Mentor</option>
+<option>Parent</option>
+<option>Other</option>
+</select>
+</div>
+<button class="btn btn-p mag" type="submit"><span>Register Now for ₹499 <svg><use href="#k-arr"></use></svg></span></button>
+<p class="fine">Your details are private. We will never spam you.</p>
+</form>
+<div class="ok">
+<div class="tick"><svg><use href="#k-check"></use></svg></div>
+<h4>Seat request received</h4>
+<p>Thank you, <span class="nm-out">there</span>. We'll send your payment link and joining details on WhatsApp within a few hours. Watch for a message from Thisai.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stx" data-screen-label="Stats">
+<div class="wrap"><div class="stx-g">
+<div><b>1,000+</b><span>Students mentored by Jayachandran</span></div>
+<div><b>50</b><span>Total seats available</span></div>
+<div><b>3 Hrs</b><span>Live workshop duration</span></div>
+<div><b>₹499</b><span>Full access, no replay</span></div>
+</div></div>
+</section>
+
+<!-- 01 WHY THIS WORKSHOP -->
+<section class="ch alt" id="ch01" data-screen-label="01 Why this workshop">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>01</b><span class="lbl">Why this workshop</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">What Makes This Different From <em>Everything Else</em></h2></div>
+<div class="asm g3 hsc">
+<article class="as tlt rv"><span class="obj o-orb a3" aria-hidden="true"></span><span class="an">01</span><h3>AI, Not Guesswork</h3><p>Other tools are questionnaires from 20 years ago. Thisai assesses a student in minutes and generates a personalised career roadmap, a session no school here has seen before.</p><div class="metric"><b>&lt;30 min</b><span>Full AI assessment</span></div></article>
+<article class="as tlt rv d1"><span class="obj cube a3" style="--s:64px" aria-hidden="true"><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i></span><span class="an">02</span><h3>Built for Tamil Nadu, Taught in Tamil</h3><p>Not a Bangalore course adapted for the south. Language, colleges, government exams, local job market, all local. You learn in the language you think in.</p><div class="metric"><b>தமிழ்</b><span>+ English throughout</span></div></article>
+<article class="as tlt rv d2"><span class="obj o-glass a3" style="border-radius:18px" aria-hidden="true"></span><span class="an">03</span><h3>The Instructor Has Done This. Here.</h3><p>Jayachandran is a certified counsellor who has mentored students and built school partnerships across Tamil Nadu. What he teaches in 3 hours took him years to build.</p><div class="metric"><b>1,000+</b><span>Students mentored</span></div></article>
+</div>
+<div class="hint"><i></i>Swipe to see all three</div>
+</div>
+</section>
+
+<!-- 02 WHAT YOU WILL LEARN -->
+<section class="ch" id="ch02" data-screen-label="02 What happens in 3 hours">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>02</b><span class="lbl">What you will learn</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">What Happens in <em>3 Hours</em></h2></div>
+<div class="aud rv">
+<div class="aud-l" id="audL">
+<button class="on" data-i="0"><span class="an">01</span><span class="at">The Tamil Nadu Opportunity</span><span class="ac"><svg><use href="#k-arr"></use></svg></span></button>
+<button data-i="1"><span class="an">02</span><span class="at">The Thisai AI Platform</span><span class="ac"><svg><use href="#k-arr"></use></svg></span></button>
+<button data-i="2"><span class="an">03</span><span class="at">Building Your Practice</span><span class="ac"><svg><use href="#k-arr"></use></svg></span></button>
+</div>
+<div class="aud-p" id="audP">
+<span class="sw"></span>
+<span class="obj o-ring" aria-hidden="true"></span>
+<div id="audBody"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 03 WHO IS THIS FOR -->
+<section class="ch alt" id="ch03" data-screen-label="03 Who is this for">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>03</b><span class="lbl">Who is this for</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">This Workshop Is <em>For You If…</em></h2></div>
+<div class="fit">
+<div class="rv">
+<div class="fit-s">Six kinds of people walk out of this workshop with a practice. <em>Find yourself here.</em></div>
+<div class="nots">
+<div class="nk">What you do not need</div>
+<div><i></i>A psychology degree</div>
+<div><i></i>Counselling experience</div>
+<div><i></i>A big-city background</div>
+</div>
+</div>
+<div class="tiles rv d1">
+<div class="tile"><svg><use href="#k-cap"></use></svg><b>You already advise students</b><span>Teacher</span></div>
+<div class="tile"><svg><use href="#k-grid"></use></svg><b>You run a coaching centre</b><span>Owner</span></div>
+<div class="tile"><svg><use href="#k-spark"></use></svg><b>You work in HR or training</b><span>Career shift</span></div>
+<div class="tile"><svg><use href="#k-check"></use></svg><b>You tutor or mentor students</b><span>Class 9-12</span></div>
+<div class="tile"><svg><use href="#k-star"></use></svg><b>You are an involved parent</b><span>School community</span></div>
+<div class="tile"><svg><use href="#k-grow"></use></svg><b>You want a second income</b><span>Flexible · respected</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 04 INSTRUCTOR -->
+<section class="ch" id="ch04" data-screen-label="04 Instructor">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>04</b><span class="lbl">Your instructor</span><span class="rule"></span></div>
+<div class="xp rv">
+<div class="xp-ph"><image-slot id="ws-instructor" shape="rect" fit="cover" placeholder="Drop a photo: Jayachandran, Co-Founder of Thisai" src="assets/jayachandran.webp"></image-slot><span class="tag"><span class="dot"></span>Jayachandran · Co-Founder, Thisai</span></div>
+<div class="xp-c">
+<h2 class="dl rw">Jayachandran: <em>Certified Career Counsellor</em></h2>
+<p class="lede">Jayachandran has spent years inside Tamil Nadu's education system, mentoring students directly, building school and college relationships, and guiding families through the decisions that shape a life.</p>
+<p class="lede">As a certified career counsellor he has mentored 1,000+ students, backed by data rather than guesswork. He co-founded Thisai because no good career guidance tool existed for Tamil Nadu students. This workshop is 3 hours of what he learned, compressed and ready to apply.</p>
+<div class="xnums">
+<div><b>1,000+</b><span>Students mentored</span></div>
+<div><b>Across TN</b><span>School &amp; college partnerships</span></div>
+<div><b>AI platform</b><span>Built for Indian students</span></div>
+</div>
+<div class="btns">
+<a class="btn btn-p mag" href="#register"><span>Register for ₹499 <svg><use href="#k-arr"></use></svg></span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 05 TESTIMONIALS -->
+<section class="ch alt" id="trust" data-screen-label="05 What they say">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>05</b><span class="lbl">What they say</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">People Who Already Sat in <em>This Room</em></h2></div>
+<div class="tst hsc">
+<article class="tq rv">
+<svg class="qm" viewBox="0 0 24 24" aria-hidden="true"><use href="#k-star"></use></svg>
+<p>I walked in with zero background in career counselling and walked out understanding the entire framework, how it works from the ground up. For someone starting from scratch, the 3 hours gave me a real foundation I could immediately start applying.</p>
+<div class="tq-w"><span class="av"><image-slot id="ws-tq-1" shape="circle" fit="cover" placeholder="Photo"></image-slot></span><div><b>Keerthana</b><span>Data Trainer</span></div></div>
+</article>
+<article class="tq rv d1">
+<svg class="qm" viewBox="0 0 24 24" aria-hidden="true"><use href="#k-star"></use></svg>
+<p>Jayachandran is a wonderful coach. The way he taught us to handle students and parents together, not just students, was something I hadn't seen in any other workshop. That one shift changed how I think about counselling conversations.</p>
+<div class="tq-w"><span class="av"><image-slot id="ws-tq-2" shape="circle" fit="cover" placeholder="Photo"></image-slot></span><div><b>Revathi</b><span>Bio Medical Engineer</span></div></div>
+</article>
+<article class="tq rv d2">
+<svg class="qm" viewBox="0 0 24 24" aria-hidden="true"><use href="#k-star"></use></svg>
+<p>This showed me exactly how to approach schools and get them on board for our program. At ₹499, it's genuinely worth it: practical, not just theory.</p>
+<div class="tq-w"><span class="av"><image-slot id="ws-tq-3" shape="circle" fit="cover" placeholder="Photo"></image-slot></span><div><b>Ahamad Khan</b><span>Educationist</span></div></div>
+</article>
+</div>
+<div class="hint"><i></i>Swipe · 3 voices</div>
+<div class="tst-b rv">
+<div><b>1,000+</b><span>Students mentored by Jayachandran</span></div>
+<div><b>Across TN</b><span>School and college partnerships</span></div>
+<div><b>50</b><span>Seats in this workshop, live only</span></div>
+</div>
+</div></section>
+
+<!-- 06 BONUSES -->
+<section class="ch" id="ch05" data-screen-label="06 Bonuses">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>06</b><span class="lbl">Bonuses</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">What You Get When <em>You Register</em></h2></div>
+<div class="cns hsc">
+<article class="pn rv">
+<div class="pn-b">
+<div><div class="nm">Thisai AI Platform: 7-Day Full Access</div><div class="sp">Bonus 01</div></div>
+<p>Run live AI assessments and generate career reports on the same platform your clients will use, before your first paid session.</p>
+<div class="pn-m"><div class="pn-r"><b>Value</b><span>₹12,000</span></div><div class="pn-r"><b>Your cost</b><span>Free with registration</span></div></div>
+<a class="btn btn-p mag" href="#register"><span>Claim your seat <svg><use href="#k-arr"></use></svg></span></a>
+</div>
+</article>
+<article class="pn rv d1">
+<div class="pn-b">
+<div><div class="nm">5 AI Career Assessment Reports</div><div class="sp">Bonus 02</div></div>
+<p>Assess 5 real people, students, family, friends, and get actual AI career reports back. Live practice before your first paying client.</p>
+<div class="pn-m"><div class="pn-r"><b>Value</b><span>₹7,500</span></div><div class="pn-r"><b>Your cost</b><span>Free with registration</span></div></div>
+<a class="btn btn-p mag" href="#register"><span>Claim your seat <svg><use href="#k-arr"></use></svg></span></a>
+</div>
+</article>
+<article class="pn rv d2">
+<div class="pn-b">
+<div><div class="nm">Thisai Certificate of Participation</div><div class="sp">Bonus 03</div></div>
+<p>Proof of training in AI-powered career counselling. Show it to schools, display it at your practice, build parent trust instantly.</p>
+<div class="pn-m"><div class="pn-r"><b>Issued by</b><span>Thisai Intelligence Technologies</span></div><div class="pn-r"><b>Your cost</b><span>Free with registration</span></div></div>
+<a class="btn btn-p mag" href="#register"><span>Claim your seat <svg><use href="#k-arr"></use></svg></span></a>
+</div>
+</article>
+</div>
+<div class="hint"><i></i>Swipe · 3 bonuses</div>
+<div class="bonus-tot rv">Bonuses worth ₹19,500+ · <b>Your investment today: ₹499</b></div>
+</div>
+</section>
+
+<!-- 07 WHY NOW -->
+<section class="ch alt" id="ch06" data-screen-label="07 Why now">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>07</b><span class="lbl">Why now</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">Tamil Nadu Needs Career Counsellors. <em>Urgently.</em></h2></div>
+<div class="ins">
+<div class="ib w3 dark rv">
+<div class="ik">Schools &amp; colleges in Tamil Nadu</div>
+<div class="big">47,000+</div>
+<div class="dots-g" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<p>Almost none have a trained career counsellor on staff. The demand already exists, unmet, in every district, you do not have to create it.</p>
+</div>
+<div class="ib w3 rv">
+<div class="ik">Students per counsellor</div>
+<div class="bars">
+<div class="bar"><span class="bl">India today</span><span class="bt"><i style="--w:100%"></i></span><b>1 : 30,000</b></div>
+<div class="bar gold"><span class="bl">Global standard</span><span class="bt"><i style="--w:3%"></i></span><b>1 : 250</b></div>
+</div>
+<p>That gap is the single largest untapped professional opportunity in Indian education right now.</p>
+</div>
+<div class="ib w2 rv">
+<div class="ik">The mandate</div>
+<span class="stamp" style="color:var(--blue)">NEP 2020</span>
+<h3>Guidance is mandatory. Nobody is qualified to deliver it.</h3>
+<p>Every school now has a requirement it cannot meet. Trained counsellors get to name their terms.</p>
+</div>
+<div class="ib w2 rv">
+<div class="ik">What a counsellor earns</div>
+<div class="big">₹40-80k</div>
+<div class="rng">
+<div class="tr"><i></i></div>
+<div class="sc"><span>₹0</span><span>per month</span><span>₹1L</span></div>
+</div>
+<p>With just 2-3 school tie-ups. Individual sessions run ₹500-₹2,500.</p>
+</div>
+<div class="ib w2 rv">
+<div class="ik">How students choose today</div>
+<div class="tagr">
+<span>Family opinion</span><span>Peer pressure</span><span>Outdated lists</span><span>Rank guesswork</span><span class="hot">Data, rarely</span>
+</div>
+<p>Every one of them is a student you could help properly, with the right tools.</p>
+</div>
+</div>
+<p class="close-line rv">This is the ground floor. There are only 50 seats in this workshop. <em>It will not stay open long.</em></p>
+</div>
+</section>
+
+<!-- 08 WORKSHOP DETAILS -->
+<section class="ch" id="ch07" data-screen-label="08 Workshop details">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>08</b><span class="lbl">Workshop details</span><span class="rule"></span></div>
+<div class="head"><h2 class="dl rw">Everything You Need <em>To Know</em></h2></div>
+<div class="det">
+<div class="det-t rv">
+<div class="dr"><b>Date</b><span>Saturday, 20 September 2026</span></div>
+<div class="dr"><b>Time</b><span>11:00 AM IST</span></div>
+<div class="dr"><b>Duration</b><span>3 Hours</span></div>
+<div class="dr"><b>Mode</b><span>Live Online</span></div>
+<div class="dr"><b>Language</b><span>Tamil + English</span></div>
+<div class="dr"><b>Seats</b><span>50 seats, no exceptions</span></div>
+<div class="dr"><b>Recording</b><span>No. This session will not be shared.</span></div>
+<div class="dr hot"><b>Price</b><span>₹499</span></div>
+</div>
+<div class="walk rv d1">
+<div class="wk">What you walk away with</div>
+<div class="xl">
+<div><svg><use href="#k-check"></use></svg>A clear understanding of the Tamil Nadu career counselling market</div>
+<div><svg><use href="#k-check"></use></svg>Live access to the Thisai AI platform for 7 days</div>
+<div><svg><use href="#k-check"></use></svg>5 real AI career assessment reports to practise with</div>
+<div><svg><use href="#k-check"></use></svg>A 30-day action plan to your first paid session</div>
+<div><svg><use href="#k-check"></use></svg>Thisai Certificate of Participation</div>
+</div>
+<div class="btns"><a class="btn btn-p mag" href="#register"><span>Register for ₹499 <svg><use href="#k-arr"></use></svg></span></a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 09 FAQ -->
+<section class="ch alt" id="ch08" data-screen-label="09 FAQ">
+<span class="scan"></span>
+<div class="wrap">
+<div class="ch-no"><b>09</b><span class="lbl">FAQ</span><span class="rule"></span></div>
+<div class="head mid"><h2 class="dl rw">Questions? <em>Let's Clear Them Up.</em></h2></div>
+<div class="faq" id="faqList">
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">01</span><span class="qt">Do I need a psychology or counselling background?</span><span class="qi"></span></button><div class="a"><div class="a-in">No. This workshop is designed for complete beginners. Jayachandran will take you from zero to your first session framework in 3 hours.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">02</span><span class="qt">Is the session in Tamil or English?</span><span class="qi"></span></button><div class="a"><div class="a-in">Both. The workshop is conducted in Tamil and English. All examples, case studies and Q&amp;A are in Tamil. Nobody will be left behind because of language.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">03</span><span class="qt">Will I get access to the Thisai platform?</span><span class="qi"></span></button><div class="a"><div class="a-in">Yes, 7-day full platform access is included free when you register.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">04</span><span class="qt">What certificate will I receive?</span><span class="qi"></span></button><div class="a"><div class="a-in">You receive a Thisai Intelligence Technologies Certificate of Participation confirming your training in AI-powered career counselling.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">05</span><span class="qt">Will this be recorded? Can I watch it later?</span><span class="qi"></span></button><div class="a"><div class="a-in">No. This session will not be recorded and will not be shared after the workshop. 50 seats. Live only. If you miss it, you miss it.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">06</span><span class="qt">How much can I earn as a career counsellor in Tamil Nadu?</span><span class="qi"></span></button><div class="a"><div class="a-in">A counsellor with 2-3 school or college tie-ups typically earns ₹40,000-₹80,000 per month. Individual session fees in Tamil Nadu range from ₹500 to ₹2,500 depending on the client and format.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">07</span><span class="qt">Can I start counselling right after the workshop?</span><span class="qi"></span></button><div class="a"><div class="a-in">You will leave with platform access, 5 real assessment reports, and a 30-day action plan. Your first paid session is achievable within your first month.</div></div></div>
+<div class="q"><span class="sw"></span><button aria-expanded="false"><span class="qn">08</span><span class="qt">How many seats are there?</span><span class="qi"></span></button><div class="a"><div class="a-in">50. That is the total. When they fill, registration closes permanently.</div></div></div>
+</div>
+</div>
+</section>
+
+<!-- FINAL -->
+<section class="fin" id="final" data-screen-label="Final CTA">
+<span class="obj o-orb o1" aria-hidden="true"></span>
+<span class="obj cube o2" aria-hidden="true"><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i><i class="fc"></i></span>
+<span class="obj o-glass o3" aria-hidden="true"></span>
+<span class="obj o-ring o4" aria-hidden="true"></span>
+<div class="wrap fin-in">
+<h2 class="dl rw">Tamil Nadu's students need better career guidance. <em>You can be the one who delivers it.</em></h2>
+<p class="lede rv d2">50 seats. No recording. No second chance. Register today for ₹499 and walk into 20 September with the AI tools, the framework, and the 30-day plan to start your counselling practice.</p>
+<div class="wf rv d3" id="register2">
+<div class="wf-h"><h3>Register for 20 September, 11 AM</h3><span class="pr">₹499</span></div>
+<form novalidate="novalidate">
+<div class="fr"><label for="g-name">Full name</label><input id="g-name" name="name" type="text" required="required" autocomplete="name" placeholder="Your full name"></div>
+<div class="two">
+<div class="fr"><label for="g-phone">Phone number</label><input id="g-phone" name="phone" type="tel" required="required" autocomplete="tel" placeholder="10-digit mobile"></div>
+<div class="fr"><label for="g-city">City (Tamil Nadu)</label><input id="g-city" name="city" type="text" required="required" placeholder="e.g. Coimbatore"></div>
+</div>
+<div class="fr"><label for="g-email">Email address</label><input id="g-email" name="email" type="email" required="required" autocomplete="email" placeholder="you@email.com"></div>
+<div class="fr"><label for="g-role">I am a…</label>
+<select id="g-role" name="role" required="required">
+<option value="">Select one</option>
+<option>Teacher</option>
+<option>Coaching Centre Owner</option>
+<option>HR Professional</option>
+<option>Tutor or Mentor</option>
+<option>Parent</option>
+<option>Other</option>
+</select>
+</div>
+<button class="btn btn-p mag" type="submit"><span>Register Now for ₹499 <svg><use href="#k-arr"></use></svg></span></button>
+<p class="fine">Your details are 100% private. We will never spam you.</p>
+</form>
+<div class="ok">
+<div class="tick"><svg><use href="#k-check"></use></svg></div>
+<h4>Seat request received</h4>
+<p>Thank you, <span class="nm-out">there</span>. We'll send your payment link and joining details on WhatsApp within a few hours.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="ft">
+<div class="wrap">
+<div class="ft-g">
+<div class="ft-b">
+<img src="assets/thisai-logo.png" alt="Thisai">
+<p>Thisai Intelligence Technologies Private Limited · Tamil Nadu, India</p>
+</div>
+<div class="ft-c"><h5>Workshop</h5><a href="#ch01">Why this workshop</a><a href="#ch02">What you will learn</a><a href="#ch05">Bonuses</a><a href="#ch07">Details</a></div>
+<div class="ft-c"><h5>More</h5><a href="#ch04">Your instructor</a><a href="#trust">Reviews</a><a href="#ch06">Why now</a><a href="#ch08">FAQ</a></div>
+<div class="ft-c"><h5>Contact</h5><a href="mailto:thethisaiofficial@gmail.com">thethisaiofficial@gmail.com</a><a href="http://www.thisai.pro" target="_blank" rel="noopener">www.thisai.pro</a></div>
+<div class="ft-cta"><b>Only 50 seats</b><p>Live online · 20 September 2026 · 11:00 AM IST · Tamil + English.</p><a class="btn btn-p mag" href="#register"><span>Register for ₹499 <svg><use href="#k-arr"></use></svg></span></a></div>
+</div>
+<div class="ft-bt"><span>© <span id="yr">2026</span> Thisai Intelligence Technologies Private Limited. All rights reserved.</span><a href="http://www.thisai.pro" target="_blank" rel="noopener">www.thisai.pro</a></div>
+</div>
+</footer>
+
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-label="Reserve your seat">
+<div class="pop-bd" data-close-pop="1"></div>
+<div class="pop-c">
+<button class="pop-x" type="button" data-close-pop="1" aria-label="Close">✕</button>
+<div class="pop-l">
+<div class="pk">Included free with registration</div>
+<h3>₹19,500 in bonuses. ₹499 to get in.</h3>
+<div class="pop-vs">
+<div><span>7-day Thisai AI platform access</span><b>₹12,000</b></div>
+<div><span>5 AI career assessment reports</span><b>₹7,500</b></div>
+<div><span>Certificate of participation</span><b>Included</b></div>
+<div class="tot"><span>You pay today</span><b>₹499</b></div>
+</div>
+<div class="pop-ag"><div><b>01</b>The Tamil Nadu opportunity</div><div><b>02</b>The Thisai AI platform, live</div><div><b>03</b>Building your practice</div></div>
+<p class="pf">20 September 2026 · 11:00 AM IST · 3 hours live in Tamil + English · 50 seats · no recording.</p>
+</div>
+<div class="pop-r" id="popR">
+<div class="rh">Reserve your seat</div>
+<p class="rs">Three details is all we need. We'll send the payment link and joining details on WhatsApp.</p>
+<form novalidate="novalidate">
+<div class="fr"><label for="p-name">Full name</label><input id="p-name" name="name" type="text" required="required" autocomplete="name" placeholder="Your full name"></div>
+<div class="fr"><label for="p-phone">WhatsApp number</label><input id="p-phone" name="phone" type="tel" required="required" autocomplete="tel" placeholder="10-digit mobile"></div>
+<div class="fr"><label for="p-city">City</label><input id="p-city" name="city" type="text" required="required" placeholder="e.g. Madurai"></div>
+<button class="btn btn-p" type="submit"><span>Reserve my seat for ₹499 <svg><use href="#k-arr"></use></svg></span></button>
+<p class="fine">Your details stay private. No spam, ever.</p>
+</form>
+<button class="later" type="button" data-close-pop="1">I'll read more first</button>
+<div class="ok">
+<div class="tick"><svg><use href="#k-check"></use></svg></div>
+<h4>Seat request received</h4>
+<p>Thank you, <span class="nm-out">there</span>. Your payment link and joining details are on the way via WhatsApp.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sbar" id="sbar">
+<div class="sbar-in">
+<div class="sb-t"><b>₹499</b><span>50 seats · 20 Sept</span></div>
+<button class="btn btn-p" type="button" data-open-pop="1"><span>Reserve my seat <svg><use href="#k-arr"></use></svg></span></button>
+</div>
+</div>
+
+<script src="image-slot.js"></script>
+<script src="workshop.js"></script>
+</body>
+</html>
