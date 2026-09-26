@@ -1,0 +1,62 @@
+/* partner.css — Partner Program page. Built on ai-counselor.css + workshop.css + program.css */
+
+/* trust badge chips */
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.badges span{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);border:1px solid var(--bl-24);background:var(--bl-6);padding:7px 11px}
+.badges span svg{width:12px;height:12px}
+
+/* enrolled social proof */
+.enrolled{margin-top:18px;display:inline-flex;align-items:center;gap:11px;font-size:13px;color:var(--bk-56)}
+.enrolled b{font-family:var(--mono);color:var(--blue);font-weight:600}
+.enrolled .av{display:flex}
+.enrolled .av i{width:24px;height:24px;border-radius:50%;border:2px solid var(--w);background:linear-gradient(140deg,var(--bl-24),var(--bl-6));margin-left:-8px}
+.enrolled .av i:first-child{margin-left:0}
+
+/* pillars — 4 big value cards */
+.pillars{margin-top:clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,1.8vw,22px)}
+@media(max-width:820px){.pillars{grid-template-columns:1fr}}
+.pil{position:relative;border:1px solid var(--ln);background:var(--w);padding:clamp(24px,2.8vw,34px);display:flex;flex-direction:column;gap:14px;overflow:hidden;transition:.4s cubic-bezier(.2,.8,.2,1)}
+.pil:hover{border-color:var(--blue);transform:translateY(-5px);box-shadow:0 34px 74px -38px rgba(33,79,152,.55)}
+.pil .pil-i{width:46px;height:46px;border:1px solid var(--ln-2);display:grid;place-items:center;color:var(--blue);transition:.35s}
+.pil:hover .pil-i{background:var(--blue);border-color:var(--blue);color:var(--w)}
+.pil .pil-i svg{width:22px;height:22px}
+.pil h3{font-family:var(--serif);font-size:clamp(20px,2.1vw,25px);letter-spacing:-.022em;line-height:1.14}
+.pil>p{font-size:13.5px;color:var(--bk-56);line-height:1.6}
+.pil ul{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+.pil li{display:flex;gap:10px;font-size:13px;color:var(--bk-72);line-height:1.5}
+.pil li svg{width:14px;height:14px;color:var(--blue);flex:none;margin-top:3px}
+
+/* brochure strip */
+.broch{margin-top:clamp(28px,3.4vw,46px);border:1px solid var(--blue);background:linear-gradient(150deg,var(--bl-12),transparent);padding:clamp(22px,2.6vw,32px);display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:space-between}
+.broch .bl b{font-family:var(--serif);font-size:clamp(19px,2vw,25px);letter-spacing:-.02em;display:block;line-height:1.1}
+.broch .bl p{margin-top:7px;font-size:13px;color:var(--bk-56)}
+.broch .btn{flex:none}
+
+/* before/after transformation cards */
+.baf{margin-top:clamp(28px,3.4vw,46px);display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2vw,26px)}
+@media(max-width:760px){.baf{grid-template-columns:1fr}}
+.bafc{border:1px solid var(--ln);background:var(--w);padding:clamp(22px,2.6vw,30px);display:flex;flex-direction:column;gap:16px;box-shadow:0 26px 60px -40px rgba(33,79,152,.4);transition:.4s}
+.bafc:hover{border-color:var(--blue);box-shadow:0 34px 74px -38px rgba(33,79,152,.5)}
+.bafc .top{display:flex;align-items:center;gap:14px}
+.bafc .ph{width:60px;height:60px;flex:none}
+.bafc .ph image-slot{width:100%;height:100%;display:block}
+.bafc .nm{font-family:var(--serif);font-size:19px;letter-spacing:-.02em;line-height:1.1}
+.bafc .rl{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-top:5px}
+.bafc .ba{display:flex;border:1px solid var(--ln)}
+.bafc .ba>div{flex:1;padding:13px 15px}
+.bafc .ba>div+div{border-left:1px solid var(--ln)}
+.bafc .ba .k{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--bk-38)}
+.bafc .ba .v{margin-top:7px;font-size:14px;color:var(--bk);line-height:1.35}
+.bafc .ba .v.hot{color:var(--blue);font-weight:600}
+.bafc p.q{font-size:13px;color:var(--bk-56);line-height:1.6}
+
+/* narrative prose */
+.prose{max-width:760px;margin:clamp(20px,2.4vw,34px) auto 0;text-align:center}
+.prose p{font-size:15px;color:var(--bk-56);line-height:1.75;margin-top:16px}
+.prose p:first-child{margin-top:0}
+.prose p em{font-style:normal;color:var(--blue)}
+
+/* 4-up process */
+.proc.p4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.proc.p4{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.proc.p4{grid-template-columns:1fr}}
